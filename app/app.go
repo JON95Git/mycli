@@ -29,9 +29,9 @@ func Generate() *cli.App {
 		},
 		{
 			Name:   "server",
-			Usage:  "Search for server names",
+			Usage:  "Search for name server",
 			Flags:  flags,
-			Action: searchServers,
+			Action: searchNameServers,
 		},
 	}
 
@@ -52,7 +52,7 @@ func searchIPs(c *cli.Context) {
 	}
 }
 
-func searchServers(c *cli.Context) {
+func searchNameServers(c *cli.Context) {
 	host := c.String("host")
 
 	servers, err := net.LookupNS(host)
