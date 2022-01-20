@@ -5,7 +5,7 @@ for IP and name servers of an URL.
 
 ### Dependencies
 
-You will need to [install](https://go.dev/doc/install) Golang in your enviroment.
+You will need to [install](https://go.dev/doc/install) Golang in your environment.
 
 An external package is required:
 ``
